@@ -71,6 +71,9 @@ h2{font-weight:600;font-size:clamp(34px,6vw,48px);line-height:1.1;color:var(--fo
 .sub{font-style:italic;color:var(--foil);font-size:20px;margin-bottom:16px}
 .chapter p{max-width:62ch}
 .stamp{display:inline-block;margin-top:18px;padding:3px 12px;border:2px solid var(--blood);color:#D2515B;transform:rotate(-2deg);font-family:'Special Elite',monospace;font-size:13px;letter-spacing:.12em}
+.ghlink{display:inline-block;margin-top:16px;margin-left:14px;color:var(--foil);text-decoration:none;border-bottom:1px solid var(--foil);font-size:18px;font-style:italic}
+.ghlink:hover{color:var(--ink);border-color:var(--ink)}
+.more{margin-top:64px;text-align:center;font-style:italic;color:var(--dim)}
 .facts{margin-top:14px;color:var(--dim);font-size:17px;font-style:italic}
 
 /* ---------- APPENDIX ---------- */
@@ -137,12 +140,13 @@ footer{padding:48px 24px;text-align:center;color:var(--dim);font-style:italic;ba
     <h2>The Author</h2>
     <div class="author">
       <figure class="portrait">
-        <img src="umaiya.jpg" alt="Portrait of Umaiya Akter, smiling, in a navy hijab and blue kameez" width="940" height="1000">
+        <img src="images/umaiya.jpg" alt="Portrait of Umaiya Akter, smiling, in a navy hijab and blue kameez" width="940" height="1000">
         <figcaption>Umaiya Akter, author</figcaption>
       </figure>
       <div>
         <p class="lead">Umaiya is a final-year Computer Science and Engineering student at United International University, focused on Machine Learning and AI. She likes problems where the answer is hidden in the data and the work is to find it.</p>
-        <p>Her final year design project asks a question that thousands of Bangladeshi HSC graduates face every year: what comes next? She builds practical models, and pairs them with clean full-stack and IoT work.</p>
+        <p>Her final year design project asks a question that thousands of Bangladeshi HSC graduates face every year: what comes next? She builds practical models, and pairs them with full-stack and hardware work, from Laravel and Spring Boot to Arduino, Raspberry Pi and YOLO-based computer vision.</p>
+        <p>Right now she is exploring agentic workflows, model optimization with post-training quantization, and containerized deployment with Docker.</p>
       </div>
     </div>
   </div>
@@ -164,6 +168,16 @@ footer{padding:48px 24px;text-align:center;color:var(--dim);font-style:italic;ba
 
     <article class="chapter">
       <span class="chno type">Chapter II</span>
+      <h3>The Cursed Archives</h3>
+      <p class="sub">Bibliotheca, a library system with a secret</p>
+      <p>On the surface, a dark-mode digital library where students browse and read books. Open a corrupted book and the interface gives way to a hidden dungeon game, where players cooperate to debug dark data. A Ghost Librarian chatbot powered by Google Gemini haunts the shelves, and a knowledge-points economy rewards wins, punishes losses and locks players out to recharge.</p>
+      <p class="facts">React, Vite, Spring Boot, H2, Google Gemini</p>
+      <span class="stamp">CLASSIFIED: CORRUPTED BOOKS</span>
+      <a class="ghlink" href="https://github.com/Umaiya22/Bibliotheca_Aoop_project" target="_blank" rel="noopener">Read the case file on GitHub</a>
+    </article>
+
+    <article class="chapter">
+      <span class="chno type">Chapter III</span>
       <h3>The Harvest Ledger</h3>
       <p class="sub">Krishi Sheba, a smart agro platform</p>
       <p>A web platform for the agricultural supply chain. It connects farmers with resources, market prices and buyers, so the people who grow the food are not the last to know what it is worth.</p>
@@ -171,7 +185,7 @@ footer{padding:48px 24px;text-align:center;color:var(--dim);font-style:italic;ba
     </article>
 
     <article class="chapter">
-      <span class="chno type">Chapter III</span>
+      <span class="chno type">Chapter IV</span>
       <h3>The Watchers</h3>
       <p class="sub">Office IoT Device Monitoring System</p>
       <p>Built during a hackathon: a live dashboard that watches office devices around the clock. Telemetry streams in over WebSockets, and a Discord bot raises the alarm the moment something goes quiet.</p>
@@ -179,7 +193,16 @@ footer{padding:48px 24px;text-align:center;color:var(--dim);font-style:italic;ba
     </article>
 
     <article class="chapter">
-      <span class="chno type">Chapter IV</span>
+      <span class="chno type">Chapter V</span>
+      <h3>The Ballot Box</h3>
+      <p class="sub">Election Management System</p>
+      <p>A web-based election management system written in PHP.</p>
+      <p class="facts">PHP</p>
+      <a class="ghlink" href="https://github.com/Umaiya22/Election_management_system" target="_blank" rel="noopener">Read the case file on GitHub</a>
+    </article>
+
+    <article class="chapter">
+      <span class="chno type">Chapter VI</span>
       <h3>Whispers on the Wire</h3>
       <p class="sub">Multi-Client Concurrent Chat</p>
       <p>A multithreaded chat server over TCP sockets. Many clients connect at once, messages are broadcast to everyone, and every connection stays in sync.</p>
@@ -187,12 +210,14 @@ footer{padding:48px 24px;text-align:center;color:var(--dim);font-style:italic;ba
     </article>
 
     <article class="chapter">
-      <span class="chno type">Chapter V</span>
+      <span class="chno type">Chapter VII</span>
       <h3>Lost, Then Found</h3>
       <p class="sub">Campus Lost &amp; Found Platform</p>
       <p>A single place on campus to report lost belongings, verify claims and close the case, replacing scattered notices and word of mouth.</p>
       <p class="facts">Web application</p>
     </article>
+
+    <p class="more">More files are waiting at <a href="https://github.com/Umaiya22?tab=repositories" target="_blank" rel="noopener" style="color:var(--foil)">github.com/Umaiya22</a></p>
   </div>
 </section>
 
@@ -201,9 +226,11 @@ footer{padding:48px 24px;text-align:center;color:var(--dim);font-style:italic;ba
     <span class="kicker">Appendix</span>
     <h2>Tools of the Trade</h2>
     <dl class="tools">
-      <div><dt>Machine Learning</dt><dd>Python, Scikit-Learn, Pandas, NumPy, data preprocessing, model evaluation</dd></div>
-      <div><dt>Web and Backend</dt><dd>PHP, Laravel, MySQL, REST APIs, JavaScript, HTML5, CSS3</dd></div>
-      <div><dt>Languages and Craft</dt><dd>C, C++, Java, Git and GitHub, VS Code, Figma</dd></div>
+      <div><dt>Languages</dt><dd>Python, C++, Java, PHP, JavaScript, TypeScript</dd></div>
+      <div><dt>Machine Learning</dt><dd>Scikit-Learn, Pandas, NumPy, XGBoost, PyTorch, Google Colab</dd></div>
+      <div><dt>Web and Backend</dt><dd>React, Tailwind CSS, Laravel, Spring Boot, MySQL, REST APIs</dd></div>
+      <div><dt>Hardware and Vision</dt><dd>Arduino, Raspberry Pi, YOLO</dd></div>
+      <div><dt>Tools</dt><dd>Git, Docker, Linux, VS Code, Figma</dd></div>
     </dl>
   </div>
 </section>
